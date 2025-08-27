@@ -1,0 +1,3 @@
+[deps]
+CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
+MakieTeX = "6d554a22-29e7-47bd-aee5-0c5f06619414"

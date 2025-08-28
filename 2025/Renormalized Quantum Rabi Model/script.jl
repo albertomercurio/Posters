@@ -61,17 +61,17 @@ translate!(title_box.blockscene, 0, 0, -100)
 
 # ----------- Content ------------
 
-# ----------- ### The Quantum Rabi Model ### ------------
+# ----------- ### Motivation and Physical Picture ### ------------
 
-grid_content_main = make_content_box!(left_column[1, 1], "The Quantum Rabi Model")
+grid_content_main = make_content_box!(left_column[1, 1], "Motivation and Physical Picture")
 
 pdf_doc = PDFDocument(read(joinpath(@__DIR__, "figures/Renormalized_QRM_sketch.pdf")));
-LTeX(grid_content_main[1, 1], pdf_doc, scale=2, alignmode = Outside(0, 0, 60, 40), tellwidth=false)
-Label(grid_content_main[1, 2], "A single electron in a one-dimensional potential, interacting with a cavity mode. (a), Standard procedure for obtaining the QRM from the full Hamiltonian. (b), Renormalization of the QRM, which takes into account the interaction of photons with the higher-energy atomic levels.", fontsize=CONTENT_BODY_FONT_SIZE, word_wrap=true, justification=:left)
+LTeX(grid_content_main[1, 1], pdf_doc, scale=2.3, alignmode = Outside(0, 0, 10, 10), tellwidth=false)
+Label(grid_content_main[1, 2], "A single electron in a one-dimensional potential, interacting with a cavity mode. (a), Standard procedure for obtaining the quantum Rabi model (QRM) from the full Hamiltonian. (b), Renormalization of the QRM, which takes into account the interaction of photons with the higher-energy atomic levels.", fontsize=CONTENT_BODY_FONT_SIZE, word_wrap=true, justification=:left)
 
-# ----------- ### The Model ### ------------
+# ----------- ### The Standard QRM ### ------------
 
-grid_content_main = make_content_box!(left_column[2, 1], "The Model")
+grid_content_main = make_content_box!(left_column[2, 1], "The Standard QRM")
 
 Label(grid_content_main[1, 1], "The full system is described by the following Hamiltonian", fontsize=CONTENT_BODY_FONT_SIZE, word_wrap=true, justification=:left)
 
